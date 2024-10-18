@@ -1,0 +1,170 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b2838; /* Warna gelap ala Minecraft */
+    color: #ffffff;
+}
+
+/* Navigasi */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url('image/langitminikrep.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Header */
+.header-section {
+    height: 100vh;
+    background-color: #2c3e50;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Menghindari navigasi */
+    text-align: center;
+}
+
+.header-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header-section h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #2ecc71;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+.about-section, .gallery-section, .contact-section {
+    background-color: #2c3e50;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p, .contact-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Galeri */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #16a085;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer-section {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #34495e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-section {
+        padding-top: 100px;
+    }
+}

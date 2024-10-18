@@ -1,0 +1,17 @@
+/* Animasi bounce untuk teks di header */
+.header-section h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #2ecc71;
+    animation: bounce 2s infinite; /* Animasi Bounce */
+}
+
+/* Definisi animasi bounce */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posisi normal */
+    }
+    50% {
+        transform: translateY(-10px); /* Meloncat ke atas */
+    }
+}
